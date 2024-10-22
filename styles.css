@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Fondo gris claro */
-    color: #333; /* Texto oscuro */
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 20px;
 }
@@ -9,24 +9,24 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
-    background-color: #4CAF50; /* Verde suave */
+    background-color: #4CAF50;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-    color: #ffffff; /* Título en blanco */
+    color: #ffffff;
 }
 
 h2 {
-    color: #4CAF50; /* Verde suave para subtítulos */
+    color: #4CAF50;
 }
 
 .form-container {
-    background: #ffffff; /* Fondo blanco para el formulario */
+    background: #ffffff;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     margin: 0 auto;
@@ -35,7 +35,7 @@ h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333; /* Etiquetas en color oscuro */
+    color: #333;
 }
 
 input[type="text"],
@@ -45,21 +45,48 @@ input[type="password"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f9f9f9; /* Fondo claro para campos de entrada */
-    color: #333; /* Texto oscuro */
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50; /* Verde suave */
+    background-color: #4CAF50;
     border: none;
     border-radius: 4px;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Transición suave */
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #45a049; /* Verde más oscuro
+    background-color: #45a049;
+}
+
+.results-container {
+    margin-top: 20px;
+}
+
+.result-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#all-vitamins {
+    margin-top: 20px;
+}
