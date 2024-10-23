@@ -3,57 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Rincón</title>
+    <title>Vitaminas y Suplementos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Rincón</h1>
-        <p>Encuentra información sobre enfermedades y sus vitaminas.</p>
-    </header>
-    <main>
-        <section id="login-container" class="form-container">
+    <div id="app">
+        <header>
+            <h1>Vitaminas y Suplementos</h1>
+        </header>
+        
+        <div class="form-container" id="login-container">
             <h2>Iniciar Sesión</h2>
             <form id="login-form">
-                <label for="username">Nombre de usuario:</label>
-                <input type="text" id="username" required>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" required>
+                <input type="text" id="username" placeholder="Usuario" required autocomplete="username">
+                <input type="password" id="password" placeholder="Contraseña" required autocomplete="current-password">
                 <button type="submit">Iniciar Sesión</button>
             </form>
-            <p>No tienes cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
-        </section>
+            <p>No tienes una cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+        </div>
 
-        <section id="register-container" class="form-container" style="display: none;">
+        <div class="form-container" id="register-container" style="display:none;">
             <h2>Registro</h2>
             <form id="register-form">
-                <label for="new-username">Nombre de usuario:</label>
-                <input type="text" id="new-username" required>
-                <label for="new-password">Contraseña:</label>
-                <input type="password" id="new-password" required>
-                <button type="submit">Registrar</button>
+                <input type="text" id="new-username" placeholder="Usuario" required autocomplete="username">
+                <input type="password" id="new-password" placeholder="Contraseña" required autocomplete="new-password">
+                <button type="submit">Registrarse</button>
             </form>
-            <p>Ya tienes cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
-        </section>
+            <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
+        </div>
 
-        <section class="form-container" id="search-container" style="display: none;">
+        <div class="form-container" id="search-container" style="display:none;">
             <h2>Buscar Vitaminas</h2>
             <form id="search-form">
-                <label for="disease">Ingresa la enfermedad:</label>
-                <input type="text" id="disease" placeholder="Ejemplo: Bajar de peso" required>
+                <input type="text" id="disease" placeholder="Ingresa tu búsqueda" required autocomplete="off">
                 <button type="submit">Buscar</button>
-                <button type="button" id="show-all-vitamins">Mostrar todas las vitaminas</button>
+                <button type="button" id="show-all-vitamins">Ver Todas las Vitaminas</button>
+                <button type="button" id="show-objections">Ver Objeciones</button>
             </form>
-        </section>
+            <div class="results-container" id="results" style="display:none;"></div>
+            <div class="results-container" id="all-vitamins" style="display:none;"></div>
+            <div class="results-container" id="objections" style="display:none;"></div>
+        </div>
+    </div>
 
-        <div id="results" class="results-container"></div>
-        <div id="all-vitamins" class="results-container" style="display: none;"></div>
-    </main>
     <footer>
-        <p>&copy; 2024 Tu Nombre</p>
+        <p>&copy; 2024 Vitaminas y Suplementos. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-

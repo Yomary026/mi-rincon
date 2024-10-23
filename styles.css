@@ -17,10 +17,12 @@ header {
 
 h1 {
     color: #ffffff;
+    margin: 0;
 }
 
 h2 {
     color: #4CAF50;
+    margin: 0;
 }
 
 .form-container {
@@ -42,7 +44,7 @@ input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Aumenté el margen para mejor separación */
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
@@ -59,6 +61,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 10px; /* Añadido margen superior */
 }
 
 button:hover {
@@ -71,10 +74,18 @@ button:hover {
 
 .result-item {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 15px; /* Aumenté el padding para mejor apariencia */
     margin: 10px 0;
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+
+.objection-item {
+    border: 1px solid #ccc;
+    padding: 15px; /* Aumenté el padding para mejor apariencia */
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #e9f5e9; /* Un color diferente para distinguir */
 }
 
 footer {
