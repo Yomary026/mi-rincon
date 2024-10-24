@@ -244,9 +244,9 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'Para el dolor': { 
             name: 'Megadol', 
-            description: 'Alivio del dolor rápido.', 
+            description: 'Alivio de molestias: Reduce el malestar, mejorando la movilidad y flexibilidad. Experimenta una vida más activa. Protección del cartílago: Previene futuros daños en tus articulaciones. Control de inflamación: Propiedades antiinflamatorias pueden aliviar aún más.', 
             quantity: '60 cápsulas',
-            ingredients: 'Ibuprofeno, Extracto de jengibre',
+            ingredients: 'Glucosamina sulfato, Colageno, Metilsulfonilmetano, Mezcla propietaria antiinflamatoria, Veneno de Abeja, Condroitín sulfato',
             usage: '1 cápsula cada 8 horas.'
         },
         'Super x natural': { 
