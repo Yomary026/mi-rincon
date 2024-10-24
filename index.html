@@ -12,38 +12,56 @@
             <h1>Vitaminas y Suplementos</h1>
         </header>
         
-        <div class="form-container" id="login-container">
-            <h2>Iniciar Sesión</h2>
-            <form id="login-form">
-                <input type="text" id="username" placeholder="Usuario" required autocomplete="username">
-                <input type="password" id="password" placeholder="Contraseña" required autocomplete="current-password">
-                <button type="submit">Iniciar Sesión</button>
-            </form>
-            <p>No tienes una cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
-        </div>
+        <main>
+            <div class="form-container" id="login-container">
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form">
+                    <input type="text" id="username" placeholder="Usuario" required autocomplete="username">
+                    <input type="password" id="password" placeholder="Contraseña" required autocomplete="current-password">
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <p>No tienes una cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+            </div>
 
-        <div class="form-container" id="register-container" style="display:none;">
-            <h2>Registro</h2>
-            <form id="register-form">
-                <input type="text" id="new-username" placeholder="Usuario" required autocomplete="username">
-                <input type="password" id="new-password" placeholder="Contraseña" required autocomplete="new-password">
-                <button type="submit">Registrarse</button>
-            </form>
-            <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
-        </div>
+            <div class="form-container" id="register-container" style="display:none;">
+                <h2>Registro</h2>
+                <form id="register-form">
+                    <input type="text" id="new-username" placeholder="Usuario" required autocomplete="username">
+                    <input type="password" id="new-password" placeholder="Contraseña" required autocomplete="new-password">
+                    <button type="submit">Registrarse</button>
+                </form>
+                <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
+            </div>
 
-        <div class="form-container" id="search-container" style="display:none;">
-            <h2>Buscar Vitaminas</h2>
-            <form id="search-form">
-                <input type="text" id="disease" placeholder="Ingresa tu búsqueda" required autocomplete="off">
-                <button type="submit">Buscar</button>
-                <button type="button" id="show-all-vitamins">Ver Todas las Vitaminas</button>
-                <button type="button" id="show-objections">Ver Objeciones</button>
-            </form>
-            <div class="results-container" id="results" style="display:none;"></div>
-            <div class="results-container" id="all-vitamins" style="display:none;"></div>
-            <div class="results-container" id="objections" style="display:none;"></div>
-        </div>
+            <div class="form-container" id="search-container" style="display:none;">
+                <h2>Buscar Vitaminas</h2>
+                <form id="search-form">
+                    <input type="text" id="disease" placeholder="Ingresa tu búsqueda" required autocomplete="off">
+                    <button type="submit">Buscar</button>
+                    <div class="button-group">
+                        <button type="button" id="show-all-vitamins">Ver Todas las Vitaminas</button>
+                        <button type="button" id="show-objections">Ver Objeciones</button>
+                        <button type="button" id="show-diseases">Ver Enfermedades</button>
+                    </div>
+                </form>
+                <div class="results-container" id="results" style="display:none;">
+                    <h2>Resultados de Búsqueda</h2>
+                    <div id="results-list"></div>
+                </div>
+                <div class="results-container" id="all-vitamins" style="display:none;">
+                    <h2>Todas las Vitaminas</h2>
+                    <div id="vitamins-list"></div>
+                </div>
+                <div class="results-container" id="objections" style="display:none;">
+                    <h2>Objeciones</h2>
+                    <div id="objections-list"></div>
+                </div>
+                <div id="diseases" style="display: none;">
+                    <h2>Lista de Enfermedades</h2>
+                    <ul id="diseases-list"></ul>
+                </div>
+            </div>
+        </main>
     </div>
 
     <footer>
@@ -53,3 +71,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
