@@ -393,4 +393,3 @@ const diseaseData = {
         objectionsDiv.style.display = 'none'; 
     });
 });
-});
